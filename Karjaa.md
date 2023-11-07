@@ -11,7 +11,7 @@
 
 ## a) Vagrantin asennus
 
-Latasin Vagrantin kotisivulta, käynnistin installerin, käynnistin koneen uudestaan ja asennus valmistui:
+Latasin Vagrantin kotisivulta (https://developer.hashicorp.com/vagrant/downloads?product_intent=vagrant), käynnistin installerin, käynnistin koneen uudestaan ja asennus valmistui:
 
 ![image](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/829bf97f-119e-4134-8f30-4252fd08ad7b)
 
