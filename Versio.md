@@ -60,19 +60,21 @@ Googlailun jälkeen en ollut vielä tähän tyytyväinen, koska tuossa mainittii
 
 ![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/37ba7ed4-443f-4a2d-ab6f-f18a19352d70)
 
+## d) Tukki
 
+Komennolla "git log", saa lokin näkymään. 
 
-## d) Herra-Orja
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/fa197bd2-efdc-4d8c-aa2a-f0f0b5ce881c)
 
+Siellä näkyy tuo initial commit ja muut commitit, kuka sen on tehnyt ja milloin (github käyttäjänimi, tarkka aika sekä sähköposti ja vielä mitä tehtiin commit IDn kera. (commit message)
 
+## Lähteet:
 
-## Tiivistelmä, lähteet (klo. 1.20)
+https://terokarvinen.com/2023/configuration-management-2023-autumn/
 
+https://stackoverflow.com/questions/1611215/remove-a-git-commit-which-has-not-been-pushed
 
-
-Lähteet:
-
-
+https://stackoverflow.com/questions/10564/how-can-i-set-up-an-editor-to-work-with-git-on-windows
 
 
 
