@@ -16,6 +16,15 @@ Teen tätä windowsilla, joten avaan Powershellin painamalla Windows + X ja vali
 
 ![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/371b1389-7bcf-48cf-a59a-488dad72a457)
 
+Seuraavaksi navigoin komennolla "cd" kansioon jonne halusin repositorion tiedostot, ja kloonasin ne sinne komennolla "git clone https://github.com/laurijuusti/winter-test.git". Navigoin vielä komennon luomaan kansioon, ja siellähän ne oli kun katsoi kansion sisällön komennolla "dir".
+
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/91a59b86-74cf-432b-86eb-ccf3e575371a)
+
+Loin kansioon Explorerin kautta uuden tekstitiedoston, ja lisäsin sinne hieman testitekstiä. 
+
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/1786b489-ad1b-45ce-b1d4-b09aee420bab)
+
+
 
 
 ## b) Yksi maankiertäjä
