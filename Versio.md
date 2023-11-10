@@ -44,7 +44,22 @@ Näkyy myös netissä!
 ![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/529f7298-87ac-4836-aa55-973513fb967f)
 
 
-## c) Oma orjansa
+## c) Doh!
+
+Loin kansioon tyhmän muutoksen eli toisen tekstitiedoston.
+
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/9ff4bfd6-bb97-4ab8-8069-604491d4ce5e)
+
+Kesken committia tajusin, että tätä ei saa committaa ja ajoin komennon "git reset --hard".
+
+Tämä on lopputulos: 
+
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/408cbf5c-7a92-4f8f-9fad-7748ed26c8b4)
+
+Googlailun jälkeen en ollut vielä tähän tyytyväinen, koska tuossa mainittiin vielä tuo salainen.txt. Ajoin komennon "git reset --soft HEAD~1", joka poistaa viimeisimmän commitin ennen pushia ja nyt kun ajaa "git status", kaikki näyttää hyvältä. 
+
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/37ba7ed4-443f-4a2d-ab6f-f18a19352d70)
+
 
 
 ## d) Herra-Orja
