@@ -28,12 +28,49 @@ Ajoin komennot "git add .", "git pull", "git commit" ja "git push", jolloin käv
 
 ![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/9bb8718a-e488-4f07-9a2b-5e38ff6ef63a)
 
+Generoin ssh-avaimet komennolla "ssh-keygen", lisäsin sen githubiin (klikkasin profiilikuvaa -> Settings -> SSH and GPG keys -> lisäsin sinne ja painoin "Add SSH key".
+
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/b3b1721f-6be9-446b-8df8-fa500038fef7)
+
+Kokeillaampa pushaamista uudelleen. Ei toiminut senkään jälkeen (unohdin screenshotin), antoi saman 403 errorin. Kokeilin kloonata repon ssh:llä, lisäsin saman tekstitiedoston sinne ja kokeilin uudestaan. Piti vain spesifioida commit messagen editoriksi notepad komennolla "git config core.editor notepad", se jostain syystä defaulttasi VSCodeen jota koneellani ei enää ole. Vihdoinkin pushaaminen onnistui. 
+
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/a2773f81-1b96-454d-8ff8-7a27846dbc70)
+
+Näkyy myös netissä!
+
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/529f7298-87ac-4836-aa55-973513fb967f)
 
 
 
+## b) Dolly
 
-## b) Yksi maankiertäjä
+Teen tätä windowsilla, joten avaan Powershellin painamalla Windows + X ja valitsemalla Powershell. Komennolla "git --version" tarkistan onko Git asennettuna, ja onhan se. Voimme jatkaa. 
 
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/371b1389-7bcf-48cf-a59a-488dad72a457)
+
+Seuraavaksi navigoin komennolla "cd" kansioon jonne halusin repositorion tiedostot, ja kloonasin ne sinne komennolla "git clone https://github.com/laurijuusti/winter-test.git". Navigoin vielä komennon luomaan kansioon, ja siellähän ne oli kun katsoi kansion sisällön komennolla "dir".
+
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/91a59b86-74cf-432b-86eb-ccf3e575371a)
+
+Loin kansioon Explorerin kautta uuden tekstitiedoston, ja lisäsin sinne hieman testitekstiä. 
+
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/1786b489-ad1b-45ce-b1d4-b09aee420bab)
+
+Ajoin komennot "git add .", "git pull", "git commit" ja "git push", jolloin kävi näin. Eihän minulla tietenkään ollut SSH-yhteyttä repoon, eikä se anna päivittää sinne mitään. Korjataanpas tämä SSH:llä.
+
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/9bb8718a-e488-4f07-9a2b-5e38ff6ef63a)
+
+Generoin ssh-avaimet komennolla "ssh-keygen", lisäsin sen githubiin (klikkasin profiilikuvaa -> Settings -> SSH and GPG keys -> lisäsin sinne ja painoin "Add SSH key".
+
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/b3b1721f-6be9-446b-8df8-fa500038fef7)
+
+Kokeillaampa pushaamista uudelleen. Ei toiminut senkään jälkeen (unohdin screenshotin), antoi saman 403 errorin. Kokeilin kloonata repon ssh:llä, lisäsin saman tekstitiedoston sinne ja kokeilin uudestaan. Piti vain spesifioida commit messagen editoriksi notepad komennolla "git config core.editor notepad", se jostain syystä defaulttasi VSCodeen jota koneellani ei enää ole. Vihdoinkin pushaaminen onnistui. 
+
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/a2773f81-1b96-454d-8ff8-7a27846dbc70)
+
+Näkyy myös netissä!
+
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/529f7298-87ac-4836-aa55-973513fb967f)
 
 
 ## c) Oma orjansa
