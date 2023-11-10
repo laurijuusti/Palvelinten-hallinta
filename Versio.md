@@ -24,6 +24,11 @@ Loin kansioon Explorerin kautta uuden tekstitiedoston, ja lisäsin sinne hieman 
 
 ![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/1786b489-ad1b-45ce-b1d4-b09aee420bab)
 
+Ajoin komennot "git add .", "git pull", "git commit" ja "git push", jolloin kävi näin. Eihän minulla tietenkään ollut SSH-yhteyttä repoon, eikä se anna päivittää sinne mitään. Korjataanpas tämä SSH:llä.
+
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/9bb8718a-e488-4f07-9a2b-5e38ff6ef63a)
+
+
 
 
 
