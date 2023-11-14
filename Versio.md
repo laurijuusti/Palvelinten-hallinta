@@ -66,7 +66,7 @@ Komennolla "git log", saa lokin näkymään.
 
 ![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/fa197bd2-efdc-4d8c-aa2a-f0f0b5ce881c)
 
-Siellä näkyy tuo initial commit ja muut commitit, kuka sen on tehnyt ja milloin (github käyttäjänimi, tarkka aika sekä sähköposti ja vielä mitä tehtiin commit IDn kera. (commit message)
+Siellä näkyy tuo initial commit ja muut commitit, kuka sen on tehnyt ja milloin (github käyttäjänimi, tarkka aika ja vielä mitä tehtiin commit IDn kera. (commit message)
 
 ## Lähteet:
 
