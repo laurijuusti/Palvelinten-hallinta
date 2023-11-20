@@ -32,7 +32,7 @@ Tein raporttini Karjaa ohjeiden mukaan Vagrantilla testiympäristön, jossa on k
 Loin kansion /srv/salt/hello, johon loin tiedoston init.sls, jossa on seuraava sisältö:
 
 `/tmp/infra-as-code:
-  file.managed`
+  file.managed `
 
 Kun tuon muutoksen tekee, tämän pitäisi luoda orjien tmp-kansioon kansio jonka nimi on infra-as-code. Kokeillaan.
 
