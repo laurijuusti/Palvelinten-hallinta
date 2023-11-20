@@ -16,7 +16,7 @@ Salt Project:
   -  Kerrotaan myös siitä, miten YAML koostuu. Indentaatio on tärkeää, ja jokainen tieto alkaa "- " merkeillä jolla indikoidaan jokaista merkintää
   -  Kolmannessa kohdassa avataan Saltin moduuleja (millaista on tarkistaa pakettien asennus Saltilla ja ilman)
       -  Näytetään esimerkki Saltin SLS-tiedoston data struktuurista,
-      -  Kerrotaan sls-tiedoston organisoinnista ja simppelinä pidosta,
+      -  Kerrotaan sls-tiedoston organisoinnista ja simppelinä pidosta
       -  Kerrotaan vähän miten Salt auttaa organisaatioita ison skaalan operaatioissa, yksi apu tähän on top.sls-tiedosto
       -  Ja viimeisenä näytetään Apachen ja SSHD:n infra-as-code init.sls-tiedostot.
 
