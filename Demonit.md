@@ -113,9 +113,17 @@ Ajoin komennon "sudo salt '*' state.apply", jolloin sain molemmilta orjilta täm
 
 Homma toimii!
 
-
-
 ## d) SSHouto
+
+Avasin toisen virtuaalikoneeni, ja päivitin paketit. Asensin sshd:n komennolla sudo apt install openssh-server. Paketin nimi ei ollutkaan sshd, tämä piti googlata. 
+
+Kävin ottamassa kommentin pois port-asetuksesta ja vaihdoin siihen 8888. Config-tiedosto on siis kansiossa /etc/ssh/
+
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/1bf63a14-d26d-4ce0-84b3-8304f1668405)
+
+Reboottasin demonin komennolla "sudo systemctl restart sshd", ja katsoin statuksen komennolla "sudo systemctl status sshd". Kuvasta näkyy myös että portti on nyt 8888.
+
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/768d22c1-cf07-47df-aebd-ad177e255be1)
 
 
 
