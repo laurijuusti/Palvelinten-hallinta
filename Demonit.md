@@ -25,6 +25,25 @@ Karvinen 2018:
 
 ## a) Hello SLS!
 
+Tein raporttini Karjaa ohjeiden mukaan Vagrantilla testiympäristön, jossa on kaksi orjaa ja yksi herra. SSH:tin itseni sisään komennolla "vagrant ssh tmaster".
+
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/7d7b0187-8496-4843-a470-bcbfe392fb07)
+
+Loin kansion /srv/salt/hello, johon loin tiedoston init.sls, jossa on seuraava sisältö:
+
+/tmp/infra-as-code:
+  file.managed
+
+Kun tuon muutoksen tekee, tämän pitäisi luoda orjien tmp-kansioon kansio jonka nimi on infra-as-code. Kokeillaan.
+
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/98d33707-65a5-4bb2-88c3-bfa267d82749)
+
+Minioneihin ei näköjään saa yhteyttä, kokeillaampas hyväksyä avaimet:
+
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/c6aec705-7c20-49ad-92a8-37702bcae861)
+
+Nyt pitäisi toimia. "sudo salt-key -A" sekä "sudo salt '*' test.ping"
+
 
 
 ## b) Top
