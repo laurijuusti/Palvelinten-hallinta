@@ -65,6 +65,24 @@ Ajoin muutokset komennolla "sudo salt '*' state.apply". Huomaa, että nyt ei tar
 
 ## c) Apache
 
+Asensin apachen käsin komennolla "sudo apt update", sekä "sudo apt install apache2".
+
+Kokeilin curlata localhostin, mutta curlia ei ollut virtuaalikoneessa. Asensin senkin komennolla "sudo apt install curl".
+
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/b86a0e22-71c3-4230-b833-904ac405b0de)
+
+Curlasin uudelleen komennolla "curl localhost", ja sieltähän tuli apachen oletussivu. 
+
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/2b2cbb69-bdc3-4403-84de-b6f2c510b09e)
+
+Pysäytin apachen for now, korvasin testisivun komennolla "echo 'moi' | sudo tee /var/www/html/index.html"
+
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/adb66626-bebd-4799-ac98-f2008900d9b6)
+
+Reboottasin demonin seuraavaksi.
+
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/542f69dc-b7da-4866-bd88-93b95f6b8452)
+
 
 
 ## d) SSHouto
@@ -75,7 +93,7 @@ Ajoin muutokset komennolla "sudo salt '*' state.apply". Huomaa, että nyt ei tar
 
 https://terokarvinen.com/2023/configuration-management-2023-autumn/
 
-
+https://github.com/laurijuusti/Linux-palvelimet/blob/main/Raportti5.md
 
 
 
