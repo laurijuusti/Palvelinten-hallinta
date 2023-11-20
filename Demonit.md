@@ -83,6 +83,36 @@ Reboottasin demonin seuraavaksi.
 
 ![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/542f69dc-b7da-4866-bd88-93b95f6b8452)
 
+Nyt Saltilla. Muutin topfilestä ajettavan komennon nimeksi apache.
+
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/ba596337-d2de-44bf-9292-7220b9bf9153)
+
+Kokeillaampas tällä init.sls -tiedostolla. Tuli seuraava virhe: 
+
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/a0ad19b6-e863-40c0-a012-812e21147c4c)
+
+Kokeillaampas Saltin docseista hieman muutetulla init.sls -tiedostolla apachen asennusta. 
+
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/5fab53af-c30b-45da-b22e-478653235478)
+
+Sama virhe vieläkin. Kokeillaan googlata. Vaihdoin Top filestä sen apachen takaisin helloksi, ja nyt antaa vain syntax erroria. Vaikuttaa liittyvän siihen nimeen jotenkin. 
+
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/67978165-e1bc-4e8f-8aeb-c79591e141c0)
+
+Muokkailin hieman init.sls:ää, ja tällä configilla sain sen toimimaan.
+
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/7541c680-9534-4eb7-acaa-b63ce987aed4)
+
+Ajoin komennon "sudo salt '*' state.apply", jolloin sain molemmilta orjilta tämän vastauksen.
+
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/744905ee-d672-4ac4-a019-e288378e032c)
+
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/d9992df0-6876-4200-9638-ca90592a0d88)
+
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/5e6d4df9-04de-4058-ac67-40eec0389c8b)
+
+Homma toimii!
+
 
 
 ## d) SSHouto
@@ -95,5 +125,7 @@ https://terokarvinen.com/2023/configuration-management-2023-autumn/
 
 https://github.com/laurijuusti/Linux-palvelimet/blob/main/Raportti5.md
 
+https://salt-zh.readthedocs.io/en/latest/ref/states/all/salt.states.cmd.html
 
+https://docs.saltproject.io/salt/user-guide/en/latest/topics/states.html#state-modules
 
