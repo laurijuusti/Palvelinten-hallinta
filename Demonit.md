@@ -4,9 +4,10 @@
 ### OS: Windows 10 22H2 64-bit
 ### Kone: Ryzen 7 3700x, NVIDIA RTX 3080, 32GB DDR4 RAM
 
+## x) Lue ja tiivistä
+
 
 ## a) Hello SLS!
-
 
 
 
@@ -19,6 +20,7 @@
 
 
 ## d) SSHouto
+
 
 
 ## Lähteet:
