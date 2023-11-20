@@ -2,7 +2,7 @@
 # Raportti 4, Demonit (Maanantai 20.11.2023)
 
 ### OS: Windows 10 22H2 64-bit
-### Kone: Ryzen 7 3700x, NVIDIA RTX 3080, 32GB DDR4 RAM
+### Kone: AMD Ryzen 7 3700x, NVIDIA RTX 3080, 32GB DDR4 RAM
 
 ## x) Lue ja tiivistä
 
