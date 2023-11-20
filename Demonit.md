@@ -31,8 +31,8 @@ Tein raporttini Karjaa ohjeiden mukaan Vagrantilla testiympäristön, jossa on k
 
 Loin kansion /srv/salt/hello, johon loin tiedoston init.sls, jossa on seuraava sisältö:
 
-/tmp/infra-as-code:
-  file.managed
+`/tmp/infra-as-code:
+  file.managed`
 
 Kun tuon muutoksen tekee, tämän pitäisi luoda orjien tmp-kansioon kansio jonka nimi on infra-as-code. Kokeillaan.
 
@@ -42,8 +42,13 @@ Minioneihin ei näköjään saa yhteyttä, kokeillaampas hyväksyä avaimet:
 
 ![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/c6aec705-7c20-49ad-92a8-37702bcae861)
 
-Nyt pitäisi toimia. "sudo salt-key -A" sekä "sudo salt '*' test.ping"
+Nyt pitäisi toimia. "sudo salt-key -A" sekä "sudo salt '*' test.ping". Kokeillaan uudelleen. 
 
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/eacc3124-141c-4b19-8d7a-cc823991f85a)
+
+Kansio luotu molempiin, käydäämpäs vielä tarkistamassa orjilta. Siellähän se on.
+
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/9ecd7bee-fdb1-4d03-8d2d-e01b6bfd737b)
 
 
 ## b) Top
