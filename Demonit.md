@@ -53,6 +53,14 @@ Kansio luotu molempiin, käydäämpäs vielä tarkistamassa orjilta. Siellähän
 
 ## b) Top
 
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/12fab51f-5e96-43a9-b92c-9b55dff98309)
+
+Laitoin seuraavan sisällön tiedostoon /srv/salt/top.sls
+
+Ajoin muutokset komennolla "sudo salt '*' state.apply". Huomaa, että nyt ei tarvitse spesifioida nimeä, eli sitä helloa. Muutoksia ei tehty, koska komennot ovat indemponttisia, ja kansio oli jo siellä. 
+
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/5632c03b-45ff-451a-9f00-3a673bf195da)
+
 
 
 ## c) Apache
