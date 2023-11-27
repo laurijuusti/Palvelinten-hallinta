@@ -26,19 +26,31 @@ Sen sisällä oli monta eri asetusta, noin 160 riviä. Nyt siellä näkyy eräis
 
 ![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/5ac813ca-236e-464f-b159-c2e5213e5c40)
 
-
-
 ## c) Komennus
 
+Loin kansion /srv/salt/testi1/ komennolla "sudo mkdir -p /srv/salt/testi1/". Loin kansioon tiedoston init.sls, jossa on seuraava sisältö:
 
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/314aaa1a-a07f-4419-8965-c79d777930a3)
 
+Tämä tila asentaa paketin 'neofetch' koneelle. Ajoin tilan komennolla "sudo salt-call --local state.apply testi1", ja sain viestin että paketti on asennettu jo. 
 
-
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/a01e4dda-9d9d-4f39-8274-f408c2eee590)
 
 ## d) Apassi
 
+Virtuaalikoneellani on jo Apache asennettuna aiemmista tehtävistä. Ensimmäiseksi enabloin käyttäjien kotisivut komennoilla "sudo a2enmod userdir" ja "sudo systemctl restart apache2".
 
+Loin kansion "public_html", ja sinne index.html:än jossa on vähän sisältöä. Näkyy selaimessa, käsin asennus toimii. Kokeillaan Saltilla seuraavaksi käyttäen Teron valmiiksi luomaa infra-as-code tiedostoa. 
 
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/b9ffca1d-d8ce-40e9-b7a1-6d771aa3f3f6)
+
+Loin kansion /srv/salt/apache/, jossa on init.sls tiedostossa seuraava sisältö:
+
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/baffed57-6f36-40ac-be73-731476a1920d)
+
+Kokeilin statea komennolla "sudo salt-call --local state.apply apache", ja sain seuraavan tuloksen. 
+
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/5041b304-e98c-45ca-8e5f-0046688f5432)
 
 
 
@@ -61,3 +73,4 @@ https://terokarvinen.com/2018/04/03/apache-user-homepages-automatically-salt-pac
 
 https://www.cbtnuggets.com/blog/certifications/open-source/linux-hard-links-versus-soft-links-explained
 
+https://github.com/laurijuusti/Palvelinten-hallinta/blob/main/Demonit.md
