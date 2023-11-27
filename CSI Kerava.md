@@ -26,7 +26,7 @@ Sen sisällä oli monta eri asetusta, noin 160 riviä. Nyt siellä näkyy eräis
 
 ![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/5ac813ca-236e-464f-b159-c2e5213e5c40)
 
-## c) Komennus
+## c) Komennus (klo. 14.15
 
 Loin kansion /srv/salt/testi1/ komennolla "sudo mkdir -p /srv/salt/testi1/". Loin kansioon tiedoston init.sls, jossa on seuraava sisältö:
 
@@ -36,7 +36,7 @@ Tämä tila asentaa paketin 'neofetch' koneelle. Ajoin tilan komennolla "sudo sa
 
 ![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/a01e4dda-9d9d-4f39-8274-f408c2eee590)
 
-## d) Apassi
+## d) Apassi (klo. 14.30)
 
 Virtuaalikoneellani on jo Apache asennettuna aiemmista tehtävistä. Ensimmäiseksi enabloin käyttäjien kotisivut komennoilla "sudo a2enmod userdir" ja "sudo systemctl restart apache2".
 
@@ -52,18 +52,32 @@ Kokeilin statea komennolla "sudo salt-call --local state.apply apache", ja sain 
 
 ![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/5041b304-e98c-45ca-8e5f-0046688f5432)
 
+Tuolla ei tietenkään ole tuota default-index.html -tiedostoa kun en ole sinne sitä laittanut. Vaihdoin sourceksi ~/public_html/index.html, ja ajoin komennon uudestaan. Sain saman vastauksen, että kansio ei ole olemassa, mutta kotisivuni silti näkyy. 
+
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/9daf0c63-e4b6-4c83-b73f-05a9ff219a08)
 
 
-## e) Ämpärillinen
+## e) Ämpärillinen (klo 15.30)
 
+Loin kansion /srv/salt/bash-testi/, johon loin init.sls seuraavalla sisällöllä:
 
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/6056d710-fb27-44b3-9cbf-ee4267544217)
 
+Seuraavaksi loin kansion jonne laitan skriptin, ja loin skriptin joka printtaa hieman tietoja sisällöllä
 
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/af4d8135-46e4-4c27-8b97-23a73b043ccb)
 
+Annoin execute-oikeudet komennolla "chmod +x testibash.sh", ja skriptin ajaminen onnistuu käsin. 
 
-## Tiivistelmä, lähteet
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/5eed9f2b-89df-4bf9-ac76-0771b52889e5)
 
+Kokeillaan saltilla, sain vastauksen "path is not absolute". Muutetaampas path init.sls:ssä /home/lauri/scripts/, nyt toimii!
 
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/290eec8a-fe2e-48b2-8031-f3d6b1d51635)
+
+## Tiivistelmä, lähteet (klo. 15.39)
+
+Raportissa leikin saltin tiloilla,  tutkiskelin hieman tiedostoja ja katselin asetuksia.
 
 Lähteet:
 
@@ -74,3 +88,5 @@ https://terokarvinen.com/2018/04/03/apache-user-homepages-automatically-salt-pac
 https://www.cbtnuggets.com/blog/certifications/open-source/linux-hard-links-versus-soft-links-explained
 
 https://github.com/laurijuusti/Palvelinten-hallinta/blob/main/Demonit.md
+
+https://stackoverflow.com/questions/47842414/running-a-bash-script-in-salt-minions
