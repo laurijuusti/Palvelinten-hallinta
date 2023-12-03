@@ -1,4 +1,4 @@
-# Raportti 5, CSI Kerava (Maanantai 27.11.2023)
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/2ad4108a-5165-424e-a7b3-2b5b37cd1a78)# Raportti 5, CSI Kerava (Maanantai 27.11.2023)
 
 ### OS: Windows 10 22H2 64-bit
 ### Kone: AMD Ryzen 7 3700x, 32GB DDR4 RAM, RTX 3080
@@ -25,21 +25,60 @@ Sain erroria License termeistä, kokeillaan vaihtaa VirtualBoxiin.
 
 ![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/e59cc162-5851-472c-996b-19ec72ad710f)
 
-Samat speksit kuin äsken, 50GB Disk. ![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/efb95b3a-54a7-45b0-8f05-ea7cf3749a9f). Vieläkin sama vika. ![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/1bf026c2-f0dd-4c8c-9340-b22e6f0cab1b)
+Samat speksit kuin äsken, 50GB Disk. 
 
-Kokeillaan uudestaan, nyt on asetus 'Skip Unattended Installation' päällä. Annan koneelle myös 16GB RAM ja 8 CPU-säiettä ![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/ba2bdb3f-e20f-41a0-aec1-a7e7ff5845d7)
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/efb95b3a-54a7-45b0-8f05-ea7cf3749a9f). 
 
-Noniin! ![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/037e5f68-f7d4-4a24-8d92-97071d441257) Ensin kielivalinnat ja seuraavasta ruudusta 'Install Now'. Hyväksyin EULA:n ja valitsin 'Custom: Install Windows Only'. Valitsin tyhjän virtuaalilevyn ja painoin Next. VM autorestarttasi muutaman kerran ja lopulta pääsin sisään. Varmistin vielä alueen ja näppäimistön Suomeksi. Valitsin 'Domain join instead, kun sain ruudun liittyä Microsoft-tilillä koska niin en halua tehdä. Nimeksi laitoin L. Pääsin sitten 'yksityisasetuksiin', joihin kaikkiin valitsin No. 
+Vieläkin sama vika. 
+
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/1bf026c2-f0dd-4c8c-9340-b22e6f0cab1b)
+
+Kokeillaan uudestaan, nyt on asetus 'Skip Unattended Installation' päällä. Annan koneelle myös 16GB RAM ja 8 CPU-säiettä.
+
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/ba2bdb3f-e20f-41a0-aec1-a7e7ff5845d7)
+
+Noniin! 
+
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/037e5f68-f7d4-4a24-8d92-97071d441257) 
+
+Ensin kielivalinnat ja seuraavasta ruudusta 'Install Now'. Hyväksyin EULA:n ja valitsin 'Custom: Install Windows Only'. Valitsin tyhjän virtuaalilevyn ja painoin Next. VM autorestarttasi muutaman kerran ja lopulta pääsin sisään. Varmistin vielä alueen ja näppäimistön Suomeksi. Valitsin 'Domain join instead, kun sain ruudun liittyä Microsoft-tilillä koska niin en halua tehdä. Nimeksi laitoin 'L', ei salasanaa tällä kertaa (2 kertaa Enter-painiketta kun kysyy salasanaa). Pääsin sitten 'yksityisasetuksiin', joihin kaikkiin valitsin No. 
 
 ![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/52156295-c2bd-48a4-b88e-029591091cf0)
 
+Vihdoin työpöydällä...
 
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/c965aa63-9577-433b-a761-d72f5367083e)
 
 
 ## b) Asenna Salt
 
+Googlasin 'Salt Windows', ja avasin linkin https://docs.saltproject.io/salt/install-guide/en/latest/topics/install-by-operating-system/windows.html. Valitsin 'Download Install File' (AMD64, .Exe).
+
+Avasin tiedoston ja valitsin Yes.
+
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/ced4f3c8-3f1e-4aa1-88d2-f518ba87806d)
+
+Installerissa valitsin Next, I agree, valitsin oletuskansion ja Next, hostnamelle ja minionin nimelle myös defaultit. 
+
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/eb32f5d1-2c79-45e7-aacb-455ec35f4ebb)
+
+Sain promptin asentaa VCRedist_x64_2013, asensin senkin valitsemalla Yes.
+
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/66a57d88-a9c3-4078-95b9-601bb5e4893c)
+
+Lopetin asennuksen painamalla Finish.
+
+Salt on asennettu!
 
 ## c) Kokeile grains.items
+
+Avasin powershellin painamalla Win + X -> Windows Powershell (Admin).
+
+Varmistin vielä saltin olemassaolon "salt-call --version".
+
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/3496f0b1-a2ba-47b4-b00f-6f3e2f444b17)
+
+
 
 
 ## d) Kokeile File
