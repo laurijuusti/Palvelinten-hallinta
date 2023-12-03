@@ -80,20 +80,30 @@ Varmistin vielä saltin olemassaolon "salt-call --version".
 
 Ajoin komennon *salt-call --local info grains.items", ja sieltähän tiedot tulivat!
 
-![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/ba6f3bfd-5fad-47ce-907c-8de2a16456b5)
-
-
-
-
-
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/7906b93b-44f3-4171-b4ac-b553b2a1c262)
 
 ## d) Kokeile File
 
+Loin init.sls tiedoston kansioon C:/Users/L/Salt/Test, jossa on seuraava sisältö: 
+
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/8cecb719-4f24-4561-91f4-2b6ae433c228)
+
+Ajetaan tämä Valkamon ohjeiden mukaan komennolla "salt-call --file-root=C:/Users/L/Salt/Test --local state.apply File-test", jossa --file-root kertoo Saltille kansion jota käyttää. Komento ei minulla toiminut, se ei löytänyt sitä .sls filua jostain syystä :/
+
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/a95baaa9-985e-4a47-b100-7bfbe5ab442a)
+
+
 ## e) Kokeile jotain uutta toimintoa. 
 
-## Tiivistelmä, lähteet (klo. )
+Löysin toiminnon jolla voi vaihtaa koneen kuvausta, kokeilin sitä: "salt-call --local system.set_computer_desc"
 
-Artikkelissa asensin Windowsin virtuaalikoneelle, asensin siihen Saltin ja leikin sillä hieman.
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/0d4faa78-25d1-4b45-ba49-4bfc39d1c0dc) 
+
+Näyttäisi pelaavan.
+
+## Tiivistelmä, lähteet (klo. 23.12)
+
+Artikkelissa asensin Windowsin virtuaalikoneelle, asensin siihen Saltin ja leikin sillä hieman (vähän epäonnistuneesti :D).
 
 ### Lähteet:
 
