@@ -1,4 +1,4 @@
-![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/2ad4108a-5165-424e-a7b3-2b5b37cd1a78)# Raportti 5, CSI Kerava (Maanantai 27.11.2023)
+# Raportti 6, Windows (Sunnuntai 3.12.2023)
 
 ### OS: Windows 10 22H2 64-bit
 ### Kone: AMD Ryzen 7 3700x, 32GB DDR4 RAM, RTX 3080
@@ -76,7 +76,13 @@ Avasin powershellin painamalla Win + X -> Windows Powershell (Admin).
 
 Varmistin vielä saltin olemassaolon "salt-call --version".
 
-![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/3496f0b1-a2ba-47b4-b00f-6f3e2f444b17)
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/6ca7d102-6c28-4437-aedc-a8caf2aa8608)
+
+Ajoin komennon *salt-call --local info grains.items", ja sieltähän tiedot tulivat!
+
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/ba6f3bfd-5fad-47ce-907c-8de2a16456b5)
+
+
 
 
 
