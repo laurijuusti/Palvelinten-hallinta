@@ -110,3 +110,5 @@ Artikkelissa asensin Windowsin virtuaalikoneelle, asensin siihen Saltin ja leiki
 https://terokarvinen.com/2023/configuration-management-2023-autumn/
 
 https://tuomasvalkamo.com/CMS-course/week-5/
+
+https://salthomework.wordpress.com/h5/
