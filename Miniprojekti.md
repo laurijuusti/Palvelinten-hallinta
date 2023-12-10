@@ -16,6 +16,13 @@ Vagrantfilen sisältö:
 
 ![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/b1c48bc9-993f-48f0-bb57-a1126a3d93de)
 
+SSH:tin itseni masterille, hyväksyin avaimet sekä testasin että herra-orja arkkitehtuuri on pystyssä. 
+
+    $ vagrant ssh tmaster, sudo salt-key -A, sudo salt '*' test.ping
+    
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/8f5a8f75-fc29-4bbf-b907-c73d279c77bc)
+
+
 ## Tiivistelmä, lähteet
 
 
