@@ -1,4 +1,4 @@
-# Raportti 5, CSI Kerava (Maanantai 27.11.2023)
+# Miniprojekti (Sunnuntai 10.12.2023)
 
 ### OS: Windows 10 22H2 64-bit
 ### Kone: AMD Ryzen 7 3700x, 32GB RAM, RTX 3080
