@@ -30,4 +30,4 @@ Lähteet:
 
 https://terokarvinen.com/2023/configuration-management-2023-autumn/
 
-
+https://terokarvinen.com/2023/salt-vagrant/
