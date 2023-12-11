@@ -22,6 +22,16 @@ SSH:tin itseni masterille, hyväksyin avaimet sekä testasin että herra-orja ar
     
 ![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/8f5a8f75-fc29-4bbf-b907-c73d279c77bc)
 
+Miniprojektini tarkoitus on nyt saada NVIDIAN ajuri ja Steam asennettua, jotta voisin automatisoida myöhemmin Linuxilla pyörivien pelien ja muiden Steamista löytyvien ohjelmien asentamista varten. Ensin käsin:
+
+Lisään tiedostoon /var/tmp/sources.list ensimmäisen ja toisen rivin jälkeen kohdan "contrib non-free", joka lisää paketinhallintaan Debianin Non-free paketit, joista esim. Steam löytyy. 
+
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/098587fc-c405-417b-8d55-6b5db8da6452)
+
+Seuraavaksi ajan komennon "sudo dpkg --add-architecture i386", joka sallii Multi-Archin.
+
+
+
 
 ## Tiivistelmä, lähteet
 
@@ -31,3 +41,7 @@ Lähteet:
 https://terokarvinen.com/2023/configuration-management-2023-autumn/
 
 https://terokarvinen.com/2023/salt-vagrant/
+
+https://linuxhint.com/enable-non-free-packages-debian-11/
+
+https://wiki.debian.org/Steam
