@@ -22,13 +22,15 @@ SSH:tin itseni masterille, hyväksyin avaimet sekä testasin että herra-orja ar
     
 ![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/8f5a8f75-fc29-4bbf-b907-c73d279c77bc)
 
-Miniprojektini tarkoitus on nyt saada NVIDIAN ajuri ja Steam asennettua, jotta voisin automatisoida myöhemmin Linuxilla pyörivien pelien ja muiden Steamista löytyvien ohjelmien asentamista varten. Ensin käsin:
+Miniprojektini tarkoitus on nyt saada pelille Unturned serveri pystyyn käyttäen LinuxGSM:ää. Tähän tarvitaan SteamCMD.
 
-Lisään tiedostoon /var/tmp/sources.list ensimmäisen ja toisen rivin jälkeen kohdan "contrib non-free", joka lisää paketinhallintaan Debianin Non-free paketit, joista esim. Steam löytyy. 
+Lisään tiedostoon /var/tmp/sources.list ensimmäisen ja toisen rivin jälkeen kohdan "contrib non-free", joka lisää paketinhallintaan Debianin Non-free paketit, joista esim. SteamCMD löytyy. 
 
 ![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/098587fc-c405-417b-8d55-6b5db8da6452)
 
-Seuraavaksi ajan komennon "sudo dpkg --add-architecture i386", joka sallii Multi-Archin.
+Seuraavaksi ajan komennon "sudo dpkg --add-architecture i386", joka sallii Multi-Archin. Tämän jälkeen päivitin paketit "sudo apt update", "sudo apt upgrade".
+
+Tämän jälkeen asensin Steamin ja SteamCMD:n. "sudo apt install steam" "sudo apt install steamcmd".
 
 
 
