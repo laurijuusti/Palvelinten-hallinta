@@ -66,14 +66,37 @@ Kävin asettamassa koneille Virtualboxin asetuksista lisää muistia, jos se toi
 
 ![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/8f399078-be91-4779-8ba8-ce3477ae321b)
 
-Hei, nyt serveri näyttäisi olevan päällä!
+Hei, nyt serveri näyttäisi olevan päällä! Pääsin yhdistämäänkin peliin käyttämällä pelin sisäistä konsolia "§" näppäimestä komennolla "/connect 192.168.12.3:28960"
 
 ![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/ecd4d64d-dccd-4c3e-bfc6-367562fd10a8)
+
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/65149225-783c-4916-94a7-f2ef149f9ec4)
 
 Kokeillaan automatisoida prosessia saltilla. Tein kansioon /srv/salt/paketit tiedoston init.sls, jossa on listattuna kaikki tarvittavat riippuvuudet. Koitin ajaa tilan "sudo salt '*' state.apply paketit", mutta sain erroria ettei steamcmd:tä löyty. No sehän johtuu siitä että se on Debianin non-free paketeissa. 
 
 ![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/9560df66-c6cb-428c-9d64-873d39da66aa)
 
+Kopioin masterin src/salt/ kansioon sources.list tiedoston jossa on tarvittavat muokkaukset non-free pakettien lataamiseen. Teen tilan, jolla tämä tiedosto menee orjille myös oikeaan paikkaan. Tässä init.sls:n sisältö:
+
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/e09d583d-0367-4cba-ae70-70e7d0b24c72)
+
+Kokeillaan tilaa. "sudo salt '*' state.apply pakettilähteet"
+
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/07db000e-ecc5-4d49-98ac-b2e84843b7d0)
+
+Kokeillaan ajaa paketit sisään. "sudo salt '*' state.apply paketit"
+
+Vieläkin vähän ongelmaa steamcmd:n kanssa. Ehkä koska en päivittänyt paketteja? Muokataampa tilaa hieman. Lisäsin sinne kohdan, jonka pitäisi päivittää paketit. Ei toiminut vieläkään, edelleen "package steamcmd has no installation candidate".
+
+Unohdin lisätä sinne tuon "dpkg --add-architecture i386" -komennon. 
+
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/124c2ed5-be38-48e4-b316-33c0daf18524)
+
+Nyt komento ajoi, mutta sain erroria "Sub-process /usr/bin/dpkg returned an error code (1)."
+
+Kokeilin poistaa steamcmd:n init.sls:stä, ja riippuvuuksien asennus sujui ongelmitta.
+
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/22e22a88-c0df-42ec-9300-8d1e1f23e652)
 
 ## Tiivistelmä, lähteet
 
@@ -97,3 +120,5 @@ https://docs.linuxgsm.com/troubleshooting
 https://docs.saltproject.io/en/latest/ref/states/all/salt.states.pkg.html
 
 https://linuxgsm.com/servers/codwawserver/
+
+https://stackoverflow.com/questions/51023815/upgrade-all-packages-in-a-minion-using-state
