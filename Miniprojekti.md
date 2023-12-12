@@ -94,12 +94,14 @@ Unohdin lisätä sinne tuon "dpkg --add-architecture i386" -komennon.
 
 Nyt komento ajoi, mutta sain erroria "Sub-process /usr/bin/dpkg returned an error code (1)."
 
-Kokeilin poistaa steamcmd:n init.sls:stä, ja riippuvuuksien asennus sujui ongelmitta.
+Kokeilin poistaa steamcmd:n init.sls:stä, ja muiden riippuvuuksien asennus sujui ongelmitta.
 
 ![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/22e22a88-c0df-42ec-9300-8d1e1f23e652)
 
+Kokeilin testausmielessä asentaa steamcmd:n käsin, "sudo salt '*' cmd.run 'sudo apt install steamcmd', ja 
 ## Tiivistelmä, lähteet
 
+Raportissa kokeilin luoda peliserverin, ja automatisoida sen Saltilla orjille. Tämä ei kuitenkaan onnistunut täydellisesti. 
 
 Lähteet:
 
