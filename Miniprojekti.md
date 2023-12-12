@@ -44,13 +44,23 @@ Ajoin komennot, ja pääsin setuppiin.
 
 Tämän jälkeen asennus ei toiminut. Piti käydä ajamassa tuo "./untserver install" roottina jotta kaikki riippuvuudet asentuisi, anyway, nyt taas setupissa.
 
-Setuppi ei vieläkään toiminut, herjasi appmanifesteista jotka liittyvät jotenkin Steamiin. Kokeilen toista peliä. Otan Call of Duty: World At Warin pelikseni.
+Setuppi ei vieläkään toiminut, herjasi appmanifesteista joidenka tiedän liittyvän jotenkin Steamiin. Otan helpon reitin, kokeilen toista peliä. Otan Call of Duty: World At Warin toiseksi peliksi.
 
 Näitä ohjeita käyttäen installeri lähti toimimaan: 
 
 ![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/3cf73340-6325-4f7d-a5b4-118ce778dc63)
 
-![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/5df7804e-dd49-4296-a12d-3956ac6f6588)
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/5df7804e-dd49-4296-a12d-3956ac6f6588) 
+
+Asennus on todella hidas, kesti noin 15 min.
+
+Asennus valmis! Komennolla "./codwawserver start" serveri käynnistyy.
+
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/21d01410-fbc3-471f-b00f-6dcd8d74daaa)
+
+Jaahas. Eipä käynnistynytkään. Kokeilin vielä debugata "./codwawserver debug", mutta tuloksetta. Jätän tällä kertaa tähän ja menen nukkumaan.
+
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/8bff6b18-2348-43a6-a7c9-a19e568cc397)
 
 
 
@@ -68,3 +78,9 @@ https://linuxhint.com/enable-non-free-packages-debian-11/
 https://wiki.debian.org/Steam
 
 https://linuxgsm.com/servers/untserver/
+
+https://docs.linuxgsm.com/commands/debug
+
+https://docs.linuxgsm.com/troubleshooting
+
+https://linuxgsm.com/servers/codwawserver/
