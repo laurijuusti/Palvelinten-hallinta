@@ -62,7 +62,15 @@ Jaahas. Eipä käynnistynytkään. Kokeilin vielä debugata "./codwawserver debu
 
 ![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/8bff6b18-2348-43a6-a7c9-a19e568cc397)
 
+Kävin asettamassa koneille Virtualboxin asetuksista lisää muistia, jos se toimisi.
 
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/8f399078-be91-4779-8ba8-ce3477ae321b)
+
+Hei, nyt serveri näyttäisi olevan päällä!
+
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/ecd4d64d-dccd-4c3e-bfc6-367562fd10a8)
+
+Kokeillaan automatisoida prosessia saltilla. 
 
 ## Tiivistelmä, lähteet
 
