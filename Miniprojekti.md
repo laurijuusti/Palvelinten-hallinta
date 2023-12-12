@@ -98,7 +98,12 @@ Kokeilin poistaa steamcmd:n init.sls:stä, ja muiden riippuvuuksien asennus suju
 
 ![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/22e22a88-c0df-42ec-9300-8d1e1f23e652)
 
-Kokeilin testausmielessä asentaa steamcmd:n käsin, "sudo salt '*' cmd.run 'sudo apt install steamcmd', ja 
+Kokeilin testausmielessä asentaa steamcmd:n käsin, "sudo salt '*' cmd.run 'sudo apt install steamcmd', ja kävi näin:
+
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/c5479bb7-3617-4f06-b5fa-48424454f3d6)
+
+Tähän jäi tällä kertaa.
+
 ## Tiivistelmä, lähteet
 
 Raportissa kokeilin luoda peliserverin, ja automatisoida sen Saltilla orjille. Tämä ei kuitenkaan onnistunut täydellisesti. 
