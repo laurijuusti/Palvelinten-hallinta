@@ -24,7 +24,7 @@ SSH:tin itseni masterille, hyväksyin avaimet sekä testasin että herra-orja ar
 
 Miniprojektini tarkoitus on nyt saada pelille Unturned serveri pystyyn käyttäen LinuxGSM:ää. Tähän tarvitaan SteamCMD.
 
-Lisään tiedostoon /var/tmp/sources.list ensimmäisen ja toisen rivin jälkeen kohdan "contrib non-free", joka lisää paketinhallintaan Debianin Non-free paketit, joista esim. SteamCMD löytyy. 
+Lisään tiedostoon /etc/apt/sources.list ensimmäisen ja toisen rivin jälkeen kohdan "contrib non-free", joka lisää paketinhallintaan Debianin Non-free paketit, joista esim. SteamCMD löytyy. 
 
 ![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/098587fc-c405-417b-8d55-6b5db8da6452)
 
@@ -70,7 +70,10 @@ Hei, nyt serveri näyttäisi olevan päällä!
 
 ![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/ecd4d64d-dccd-4c3e-bfc6-367562fd10a8)
 
-Kokeillaan automatisoida prosessia saltilla. 
+Kokeillaan automatisoida prosessia saltilla. Tein kansioon /srv/salt/paketit tiedoston init.sls, jossa on listattuna kaikki tarvittavat riippuvuudet. Koitin ajaa tilan "sudo salt '*' state.apply paketit", mutta sain erroria ettei steamcmd:tä löyty. No sehän johtuu siitä että se on Debianin non-free paketeissa. 
+
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/9560df66-c6cb-428c-9d64-873d39da66aa)
+
 
 ## Tiivistelmä, lähteet
 
@@ -90,5 +93,7 @@ https://linuxgsm.com/servers/untserver/
 https://docs.linuxgsm.com/commands/debug
 
 https://docs.linuxgsm.com/troubleshooting
+
+https://docs.saltproject.io/en/latest/ref/states/all/salt.states.pkg.html
 
 https://linuxgsm.com/servers/codwawserver/
