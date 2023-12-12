@@ -30,8 +30,27 @@ Lisään tiedostoon /var/tmp/sources.list ensimmäisen ja toisen rivin jälkeen 
 
 Seuraavaksi ajan komennon "sudo dpkg --add-architecture i386", joka sallii Multi-Archin. Tämän jälkeen päivitin paketit "sudo apt update", "sudo apt upgrade".
 
-Tämän jälkeen asensin Steamin ja SteamCMD:n. "sudo apt install steam" "sudo apt install steamcmd".
+Tämän jälkeen asensin Steamin ja SteamCMD:n. "sudo apt install steam" "sudo apt install steamcmd". Sitten asensin tarvittavat riippuvuudet:
 
+"sudo apt install curl wget file tar bzip2 gzip unzip bsdmainutils python3 util-linux ca-certificates binutils bc jq tmux netcat lib32gcc-s1 lib32stdc++6"
+
+Käytän LinuxGSM:n ohjeita serverin pyöräyttämiseen. https://linuxgsm.com/servers/untserver/
+
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/e1dde69b-e6c2-4db4-a0e4-138813a62b26)
+
+Ajoin komennot, ja pääsin setuppiin. 
+
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/d74e8bef-971d-4a46-9ee1-6adf04f06b43)
+
+Tämän jälkeen asennus ei toiminut. Piti käydä ajamassa tuo "./untserver install" roottina jotta kaikki riippuvuudet asentuisi, anyway, nyt taas setupissa.
+
+Setuppi ei vieläkään toiminut, herjasi appmanifesteista jotka liittyvät jotenkin Steamiin. Kokeilen toista peliä. Otan Call of Duty: World At Warin pelikseni.
+
+Näitä ohjeita käyttäen installeri lähti toimimaan: 
+
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/3cf73340-6325-4f7d-a5b4-118ce778dc63)
+
+![kuva](https://github.com/laurijuusti/Palvelinten-hallinta/assets/122888655/5df7804e-dd49-4296-a12d-3956ac6f6588)
 
 
 
@@ -47,3 +66,5 @@ https://terokarvinen.com/2023/salt-vagrant/
 https://linuxhint.com/enable-non-free-packages-debian-11/
 
 https://wiki.debian.org/Steam
+
+https://linuxgsm.com/servers/untserver/
